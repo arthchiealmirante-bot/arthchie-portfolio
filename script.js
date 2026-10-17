@@ -49,37 +49,49 @@ const projects = {
     title:'CIC Activity Monitoring System',
     kicker:'Monitoring / Validation / Compliance',
     image:'assets/project-cic.webp',
-    description:'A purpose-built monitoring system for training activity submissions. It brings participant counts, expected activities, validation status, pending submissions, corrections, formatting warnings, and recent responses into one operational view.',
-    points:[
+    overview:'A purpose-built monitoring system for training activity submissions, bringing participant counts, expected activities, validation status, pending submissions, corrections, formatting warnings, and recent responses into one view.',
+    problem:'The workflow involves keeping participant counts, expected activities, submissions, validation, corrections, and compliance status visible.',
+    solution:'Brings activity and submission information into one monitoring view, with class and subject filters and distinct validation states.',
+    features:[
       ['Dashboard visibility','See submission and validation status at a glance.'],
       ['Class + subject filters','Review activity compliance by date, class, or subject.'],
       ['Validation workflow','Separate validated, pending, correction-required, corrected, and warning states.'],
       ['Administrative follow-through','Supports reminders, participant management, submission review, and daily activity encoding.']
-    ]
+    ],
+    technologies:'Google Sheets Sync (listed in the project summary).',
+    outcome:'A consolidated view of submission and validation status, with support for review and administrative follow-through.'
   },
   fis: {
     title:'FIS Tracker Management',
     kicker:'Investigation support / Link analysis',
     image:'assets/project-fis.webp',
-    description:'An investigation-support interface for organizing firearm/evidence hit relationships across related incidents. It combines tracking records, case data, monitoring, link diagrams, mapping, workflow controls, executive briefing views, and data-quality review.',
-    points:[
+    overview:'An investigation-support interface that brings tracking records, case context, monitoring, link diagrams, mapping, workflow controls, briefing views, and data-quality review together.',
+    problem:'Related records, tracking information, monitoring status, and data-quality context need to be reviewed together.',
+    solution:'Combines tracking context with relationship views, mapping, workflow controls, and review tools in one interface.',
+    features:[
       ['Link visualization','Connects evidence or firearm groups with related cases in a visual relationship map.'],
       ['Tracking intelligence','Surfaces overall status, priority, date span, stations, and related-case context.'],
       ['Case-conference support','Structured views help move from database records to operational discussion.'],
       ['Public-safe preview','Sensitive operational particulars are deliberately obscured in this portfolio.']
-    ]
+    ],
+    technologies:'Not specified in the current public project details.',
+    outcome:'A structured view of status, priority, related-record context, and review.'
   },
   exam: {
     title:'Examination Management System',
     kicker:'Secure assessment / Monitoring / Results',
     image:'assets/project-exam.webp',
-    description:'A centralized examination administration platform designed to manage participants, courses, question banks, examinations, live monitoring, grading, results, retakes, audit trails, and system operations from one secure workspace.',
-    points:[
+    overview:'A centralized examination administration platform for participants, courses, question banks, examinations, live monitoring, grading, results, retakes, audit trails, and system operations.',
+    problem:'Examination administration spans participant and question-bank management, live attempts, grading, results, retakes, audit trails, and system operations.',
+    solution:'Centralizes examination administration, monitoring, results, retakes, and audit trails in one workspace.',
+    features:[
       ['Live examination monitoring','Tracks enrolled participants, identity confirmation, active attempts, submissions, and disconnections.'],
       ['Results analytics','Summarizes pass/fail outcomes, score distribution, progress, and grading status for rapid review.'],
       ['Administrative controls','Supports question banks, examination setup, retake authorization, exports, and database maintenance.'],
       ['Integrity indicators','Provides connection and focus-alert indicators together with audit logging for examination oversight.']
-    ]
+    ],
+    technologies:'Not specified in the current public project details.',
+    outcome:'A central workspace for examination administration, monitoring, results, and audit review.'
   }
 };
 
@@ -88,7 +100,7 @@ const dialogBody = document.getElementById('dialogBody');
 const closeDialog = document.querySelector('.dialog-close');
 function openProject(key){
   const p = projects[key]; if(!p) return;
-  dialogBody.innerHTML = `<div class="dialog-inner"><span class="section-index">${p.kicker}</span><h2>${p.title}</h2><p>${p.description}</p><img src="${p.image}" alt="${p.title} preview"><div class="dialog-list">${p.points.map(x=>`<div><strong>${x[0]}</strong><span>${x[1]}</span></div>`).join('')}</div></div>`;
+  dialogBody.innerHTML = `<div class="dialog-inner"><span class="section-index">${p.kicker}</span><h2>${p.title}</h2><section class="case-section case-overview"><h3>Overview</h3><p>${p.overview}</p></section><img src="${p.image}" alt="${p.title} preview"><div class="case-grid"><section class="case-section"><h3>Problem</h3><p>${p.problem}</p></section><section class="case-section"><h3>Solution</h3><p>${p.solution}</p></section><section class="case-section"><h3>Technologies</h3><p>${p.technologies}</p></section><section class="case-section"><h3>Outcome</h3><p>${p.outcome}</p></section></div><section class="case-section case-feature-block"><h3>Key Features</h3><div class="dialog-list">${p.features.map(x=>`<div><strong>${x[0]}</strong><span>${x[1]}</span></div>`).join('')}</div></section></div>`;
   dialog.showModal();
 }
 document.querySelectorAll('.project-card').forEach(card => {
