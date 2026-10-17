@@ -57,18 +57,6 @@ const projects = {
       ['Administrative follow-through','Supports reminders, participant management, submission review, and daily activity encoding.']
     ]
   },
-  ciras: {
-    title:'CIRAS-Link: Crime Data Classification Tool',
-    kicker:'Local-first crime data processing',
-    image:'assets/project-ciras.webp',
-    description:'A standalone browser tool for classifying CIRAS detailed crime-analysis workbooks. The workflow is designed to keep selected XLSX data in the browser while automating offense-category insertion, focus-crime standardization, and export of a processed workbook.',
-    points:[
-      ['Local processing','Selected workbook data is handled in the browser rather than sent to an application server.'],
-      ['Automated classification','Maps offenses to configured categories and handles unmatched nonblank offenses through a defined fallback.'],
-      ['Workbook-aware','Finds required columns despite common capitalization or spacing differences.'],
-      ['Simple deployment','Designed as a standalone web utility that can be hosted as a static site.']
-    ]
-  },
   fis: {
     title:'FIS Tracker Management',
     kicker:'Investigation support / Link analysis',
