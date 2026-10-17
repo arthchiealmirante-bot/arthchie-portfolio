@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of Arthchie D. Almirante — investigation, crime analytics, monitoring systems, and digital solutions." />
+  <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="Arthchie D. Almirante — Investigation • Crime Analytics • Digital Systems" />
+  <meta property="og:description" content="Selected digital systems for crime analytics, investigation support, monitoring, and operational workflows." />
+  <title>Arthchie D. Almirante | Investigation • Crime Analytics • Digital Systems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="signalCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <aside class="rail" aria-label="Primary navigation">
+    <a class="brand" href="#home" aria-label="Home"><span>ADA</span></a>
+    <nav>
+      <a class="rail-link active" href="#home" data-label="Home" aria-label="Home"><span>01</span></a>
+      <a class="rail-link" href="#work" data-label="Work" aria-label="Selected work"><span>02</span></a>
+      <a class="rail-link" href="#about" data-label="About" aria-label="About"><span>03</span></a>
+      <a class="rail-link" href="#capabilities" data-label="Skills" aria-label="Capabilities"><span>04</span></a>
+      <a class="rail-link" href="#contact" data-label="Contact" aria-label="Contact"><span>05</span></a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme"><span aria-hidden="true">◐</span></button>
+  </aside>
+
+  <header class="mobile-topbar">
+    <a href="#home" class="mobile-brand">ADA</a>
+    <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </header>
+  <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
+    <a href="#home">Home</a><a href="#work">Selected Work</a><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> Portfolio / Selected Systems</div>
+        <h1>Arthchie D.<br><span>Almirante</span></h1>
+        <p class="hero-role">Investigation <b>•</b> Crime Analytics <b>•</b> Digital Systems</p>
+        <p class="hero-lede">I build practical digital tools that turn operational data into clear, usable intelligence—supporting monitoring, classification, case tracking, and better investigative decisions.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">Explore selected work <span>↘</span></a>
+          <a class="btn ghost" href="#about">About me</a>
+        </div>
+        <div class="hero-stats" aria-label="Portfolio summary">
+          <div><strong>03</strong><span>Featured systems</span></div>
+          <div><strong>100%</strong><span>Purpose-built workflows</span></div>
+          <div><strong>Local-first</strong><span>Where privacy matters</span></div>
+        </div>
+      </div>
+
+      <div class="portrait-wrap reveal" data-delay="120">
+        <div class="portrait-orbit orbit-one"></div>
+        <div class="portrait-orbit orbit-two"></div>
+        <div class="portrait-card">
+          <img src="assets/profile.webp" alt="Portrait of Arthchie D. Almirante" />
+          <div class="portrait-meta">
+            <span>ARTHCHIE D. ALMIRANTE</span>
+            <small>Investigation + Analytics + Systems</small>
+          </div>
+        </div>
+        <div class="floating-tag tag-a">Operational Analytics</div>
+        <div class="floating-tag tag-b">Digital Workflow</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of focus">
+      <div class="ticker-track">
+        <span>CRIME ANALYTICS</span><i>✦</i><span>INVESTIGATION SUPPORT</span><i>✦</i><span>MONITORING SYSTEMS</span><i>✦</i><span>DATA VISUALIZATION</span><i>✦</i><span>WORKFLOW AUTOMATION</span><i>✦</i>
+        <span>CRIME ANALYTICS</span><i>✦</i><span>INVESTIGATION SUPPORT</span><i>✦</i><span>MONITORING SYSTEMS</span><i>✦</i><span>DATA VISUALIZATION</span><i>✦</i><span>WORKFLOW AUTOMATION</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell work-section">
+      <div class="section-heading reveal">
+        <div><span class="section-index">01 / SELECTED WORK</span><h2>Systems built around<br><em>real operational needs.</em></h2></div>
+        <p>Interfaces are only part of the work. Each system is designed around a concrete workflow: reduce manual steps, improve visibility, structure data, and make the next decision easier.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-wide reveal" tabindex="0" data-project="cic">
+          <div class="project-image"><img src="assets/project-cic.webp" alt="CIC Activity Monitoring System dashboard" loading="lazy" /></div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-number">01</span><span class="status-pill">Monitoring</span></div>
+            <h3>CIC Activity Monitoring System</h3>
+            <p>A centralized monitoring workspace for class activities, submission validation, compliance status, corrections, participant tracking, and administrative follow-through.</p>
+            <div class="chip-row"><span>Dashboard</span><span>Validation Workflow</span><span>Google Sheets Sync</span></div>
+            <button class="text-link" type="button">View system brief <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" tabindex="0" data-project="ciras" data-delay="80">
+          <div class="project-image"><img src="assets/project-ciras.webp" alt="CIRAS-Link Crime Data Classification Tool" loading="lazy" /></div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-number">02</span><span class="status-pill">Data Processing</span></div>
+            <h3>CIRAS-Link</h3>
+            <p>A browser-based crime data classification tool that processes CIRAS Excel extracts locally and standardizes offense classification without uploading the workbook to an external server.</p>
+            <div class="chip-row"><span>Local Processing</span><span>XLSX</span><span>Classification</span></div>
+            <button class="text-link" type="button">View system brief <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" tabindex="0" data-project="fis" data-delay="140">
+          <div class="project-image"><img src="assets/project-fis.webp" alt="Sanitized preview of FIS Tracker Management" loading="lazy" /></div>
+          <div class="project-content">
+            <div class="project-topline"><span class="project-number">03</span><span class="status-pill">Investigation Support</span></div>
+            <h3>FIS Tracker Management</h3>
+            <p>An investigation-support workspace that connects firearm/evidence hits with related cases, tracking numbers, monitoring states, mapping, workflow, and case-conference views.</p>
+            <div class="chip-row"><span>Link Analysis</span><span>Case Tracking</span><span>Decision Support</span></div>
+            <button class="text-link" type="button">View system brief <span>↗</span></button>
+          </div>
+        </article>
+      </div>
+      <p class="privacy-note reveal">Public previews intentionally omit or obscure sensitive operational details.</p>
+    </section>
+
+    <section id="about" class="section-shell about-section">
+      <div class="about-grid">
+        <div class="section-heading compact reveal">
+          <div><span class="section-index">02 / ABOUT</span><h2>Built from the<br><em>workflow outward.</em></h2></div>
+        </div>
+        <div class="about-copy reveal" data-delay="100">
+          <p class="lead">My work sits at the intersection of investigation, crime analytics, operational monitoring, and information systems.</p>
+          <p>I focus on turning repetitive, fragmented, or difficult-to-monitor processes into tools that are easier to use and easier to act on. That means understanding the actual workflow first—what data comes in, who needs to validate it, what decisions follow, and what information must remain visible.</p>
+          <p>The result is not software for software's sake. It is practical digital support for reporting, data classification, compliance monitoring, case tracking, and operational analysis.</p>
+          <div class="principles">
+            <div><span>01</span><strong>Operational first</strong><small>Design around the real process, not a generic template.</small></div>
+            <div><span>02</span><strong>Data with context</strong><small>Present information so trends, status, and priorities are obvious.</small></div>
+            <div><span>03</span><strong>Privacy aware</strong><small>Keep sensitive workflows local when the use case requires it.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section-shell capabilities-section">
+      <div class="section-heading reveal">
+        <div><span class="section-index">03 / CAPABILITIES</span><h2>From raw records to<br><em>usable systems.</em></h2></div>
+        <p>Capabilities shown here reflect the type of work represented in this portfolio and the systems behind it.</p>
+      </div>
+      <div class="capability-grid">
+        <div class="cap-card reveal"><span class="cap-no">01</span><h3>Crime Analytics</h3><p>Structuring incident data, offense categories, trend views, KPI summaries, and decision-ready reporting.</p></div>
+        <div class="cap-card reveal" data-delay="60"><span class="cap-no">02</span><h3>Monitoring Systems</h3><p>Compliance dashboards, activity tracking, validation queues, status matrices, and follow-up workflows.</p></div>
+        <div class="cap-card reveal" data-delay="120"><span class="cap-no">03</span><h3>Investigation Support</h3><p>Case tracking, link analysis, evidence-to-case relationships, briefing views, and structured monitoring.</p></div>
+        <div class="cap-card reveal" data-delay="180"><span class="cap-no">04</span><h3>Browser-Based Tools</h3><p>Standalone HTML, CSS, and JavaScript tools designed for simple deployment and practical day-to-day use.</p></div>
+        <div class="cap-card reveal" data-delay="240"><span class="cap-no">05</span><h3>Excel Data Workflows</h3><p>Import, transformation, classification, validation, export, and automation around spreadsheet-based records.</p></div>
+        <div class="cap-card reveal" data-delay="300"><span class="cap-no">06</span><h3>Data Visualization</h3><p>Dashboards and visual summaries that emphasize status, comparison, trends, exceptions, and priorities.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div class="contact-panel reveal">
+        <span class="section-index">04 / CONTACT</span>
+        <h2>Build with purpose.<br><em>Measure what matters.</em></h2>
+        <p>This portfolio is focused on practical systems for investigation, analytics, monitoring, and operational workflows. Contact links can be added before public deployment.</p>
+        <a class="btn primary" href="#work">Review selected work <span>↑</span></a>
+        <div class="contact-foot"><span>Arthchie D. Almirante</span><span>Philippines</span><span id="year"></span></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="projectDialog" class="project-dialog">
+    <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+    <div id="dialogBody"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
