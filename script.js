@@ -80,6 +80,18 @@ const projects = {
       ['Case-conference support','Structured views help move from database records to operational discussion.'],
       ['Public-safe preview','Sensitive operational particulars are deliberately obscured in this portfolio.']
     ]
+  },
+  exam: {
+    title:'Examination Management System',
+    kicker:'Secure assessment / Monitoring / Results',
+    image:'assets/project-exam.webp',
+    description:'A centralized examination administration platform designed to manage participants, courses, question banks, examinations, live monitoring, grading, results, retakes, audit trails, and system operations from one secure workspace.',
+    points:[
+      ['Live examination monitoring','Tracks enrolled participants, identity confirmation, active attempts, submissions, and disconnections.'],
+      ['Results analytics','Summarizes pass/fail outcomes, score distribution, progress, and grading status for rapid review.'],
+      ['Administrative controls','Supports question banks, examination setup, retake authorization, exports, and database maintenance.'],
+      ['Integrity indicators','Provides connection and focus-alert indicators together with audit logging for examination oversight.']
+    ]
   }
 };
 
